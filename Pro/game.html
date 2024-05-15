@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-assest-item id="obj" src="./assets/tinker.obj"></a-assest-item> 
+            <a-assest-item id="tbl" src="./assets/obj.mtl"></a-assest-item> 
+
+        </a-assets>
+
+        <a-entity obj-model="obj: #table-object; mtl : table-mtl" position="5 0 0" rotation="-95 0 0" scale="0.1 0.1 0.1"></a-entity>
+
+
+    </a-scene>   
+</body>
+</html>
